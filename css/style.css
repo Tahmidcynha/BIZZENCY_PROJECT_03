@@ -1,0 +1,669 @@
+/* COMMON CSS START  */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&family=Ubuntu:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primaryFont: 'Ubuntu', sans-serif;
+    --secondaryFont: 'Open Sans', sans-serif;
+    --multiFont: 'Abril Fatface', cursive;
+    --primaryColor: #0f2f44 ;
+    --secondaryColor: #8484bf ;
+    --multiColor: #ffc712;
+    --footerColor: #777777;
+    --letterColor: #222222;
+    --letterColor2: #ffffff;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+.btn{
+    background-color: var(--secondaryColor);
+    color: var(--letterColor2) ;
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--primaryFont);
+}
+
+.heading h5{
+    font-size: 14px ;
+    font-weight: 300 ;
+    font-family: var(--primaryFont);
+    color: var(--primaryColor) ;
+}
+.heading h2{
+    font-size: 32px ;
+    font-weight: 400 ;
+    font-family: var(--multiFont) ;
+    color: var(--primaryColor) ;
+}
+/* COMMON CSS END  */
+
+/* HEADER START  */
+header{
+    background-color: var(--primaryColor);
+    color: var(--letterColor2);
+    font-family: var(--primaryFont);
+    padding: 18px 0px;
+    height: 50px;
+}
+
+header .welcome,
+header .opening{
+    width: 50%;
+}
+
+header .welcome p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+header .opening p{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+}
+/* HEADER END HERE  */
+
+/* NAVBAR START HERE  */
+nav{
+    height: 94px;
+}
+nav .logo{
+    width: 40%;
+    padding: 30px 0px;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu{
+    text-align: right;
+    width: 60%;
+    
+}
+nav .menu ul li a{
+    font-size: 16px ;
+    color: var(--letterColor) ;
+    font-weight: 500 ;
+    font-family: var(--primaryFont);
+    padding: 40px 18px;
+    display: block;
+    transition: 450ms;
+}
+nav .menu ul li:hover a{
+    color: var(--multiColor);
+}
+nav .menu span{
+    font-size: 14px;
+    color: var(--footerColor);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    /* background-color: red; */
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #77777786;
+    line-height: 30px;
+    cursor: pointer;
+}
+/* NAVBAR END HERE  */
+
+/* BANNER START HERE  */
+#banner{
+    background-image: url(../image/banner.jpg);
+    height: 601px;
+    background-size: cover;
+    background-position: center;
+}
+#banner .container{
+    height: 100%;
+}
+#banner .row{
+    height: 100%;
+    
+}
+#banner .banner_cnt{
+    width: 40%;
+
+}
+#banner .banner_cnt h2{
+    font-size: 50px ;
+    font-weight: 300 ;
+    font-family: var(--primaryFont) ;
+    color: var(--primaryColor);
+}
+#banner .banner_cnt h1{
+    font-size: 80px;
+    font-weight: 400 ;
+    font-family: var(--multiFont) ;
+    color: var(--primaryColor) ;
+    text-transform: uppercase;
+    line-height: 68px;
+}
+#banner .banner_cnt h3{
+    font-size: 32px ;
+    font-weight: 400 ;
+    font-family: var(--primaryFont) ;
+    color: var(--secondaryColor) ;
+    letter-spacing: 14px;
+    line-height: 58px;
+}
+#banner .banner_cnt p{
+    font-size: 14px ;
+    font-weight: 400 ;
+    font-family: var(--secondaryFont) ;
+    color: #666666 ;
+    padding: 22px 0px 27px 0px;
+}      
+#banner .banner_cnt .videoBtn{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    color: var(--secondaryColor);
+    background-color: var(--letterColor2);
+    font-size: 21px;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.048) 0px 2px 16px 0px;
+}
+/* BANNER END HERE  */
+/* ABOUT START HERE  */
+#about{
+    height: 718px;
+    width: 100%;
+    padding: 100px 0px;
+}
+#about .about_cnt{
+    width: 600px;
+
+}
+
+#about .about_cnt p{
+    font-size: 16px ;
+    font-weight: 400 ;
+    font-family: var(--secondaryFont) ;
+    color: var(--primaryColor) ;
+    padding: 30px 0px;
+    line-height: 24px;
+    margin-top: 0px;
+}
+#about .about_cnt .about_2{
+    font-size: 16px ;
+    font-weight: 400 ;
+    font-family: var(--secondaryFont) ;
+    color: var(--primaryColor) ;
+    line-height: 42px;
+    padding-left: 30px;
+}
+#about .about_cnt .about_img{
+    align-items: right;
+}
+#about .about_btn{
+    padding-top: 30px;
+}
+#about .btn{
+    background-color: var(--multiColor);
+    color: var(--primaryColor);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-right: 20px;
+    transition: 450ms;
+}
+#about .btn:hover{
+    background-color: var(--letterColor2);
+}
+/* ABOUT END HERE */
+
+
+/* SKILL START HERE  */
+#skill .container .skill_cnt{
+    text-align: right;
+    width: 50%;
+    align-items: right;
+}
+#skill .skill_img{
+    width: 50%
+}
+#skill .skill_img img{
+    margin-left: -93px;
+}
+#skill .skill_cnt .skill_text p{
+    padding: 28px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--secondaryFont);
+    color: var(--primaryColor);
+}
+/* SKILL END HERE */
+
+
+/* SERVICES START HERE */
+#services {
+    margin: 100px 0px;
+    background-color: #f5f5f5 ;
+    height: 425px;
+}
+#services .heading{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 56px;
+}
+#services .services_card {
+    margin: 0 15px;
+    width: calc(33.33% - 30px);
+    background-color:#e9e9e9;
+    position: relative;
+}
+#services .services_card .icon{
+    width: 25%;
+    align-items: center;
+    padding-left: 20px;
+}
+#services .services_cnt{
+    width: 75%;
+    padding: 28px 18px;
+    background-color: #eeeeee;
+}
+#services .services_cnt h4{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--primaryFont);
+    color: var(--letterColor);
+    padding-bottom: 18px;
+}
+#services .services_cnt p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--secondaryFont);
+    color: #444444;
+}
+#services .services_card .overlay{
+    position: absolute;
+    background-color: var(--primaryColor);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 25px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 450ms;
+}
+#services .services_card:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+}
+
+#services .overlay h4{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--primaryFont);
+    color: #ffffff;
+    padding-top: 8px;
+}
+#services .overlay a{
+    padding-bottom: 0px;
+    position: absolute;
+    color: var(--letterColor);
+    background-color: var(--multiColor);
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    left: calc(0% - 21px);
+    display: block;
+    bottom: -21px;
+    transition: 450ms;
+    transition-delay: 150ms;
+}
+#services .overlay:hover a{
+    left: calc(50% - 21px);
+
+}
+/* SERVICES END HERE */
+
+/* PORTFOLIO START HERE */
+#portfolio{
+    margin: 98px 0px;
+}
+#portfolio .heading{
+    text-align: center;
+}
+#portfolio .port_card2{
+    margin: 0px 60px;
+}
+#portfolio .portfolio_bnr{
+    margin: 60px 0px;
+    position: relative;
+    height: 420px;
+}
+#portfolio .portfolio_bnr .img{
+    width: 100%;
+    display: block;
+}
+#portfolio .overlay h4{
+    font-size: 20px;
+    font-family: var(--primaryFont);
+    font-weight: 500;
+    color: var(--primaryColor);
+}
+#portfolio .portfolio_bnr .overlay{
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    padding: 30px 0px;
+    text-align: center;
+    bottom: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 3px;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: 350ms;
+}
+#portfolio .portfolio_bnr:hover .overlay{
+    transform: scaleY(1);
+}
+#portfolio .btn{
+    margin-left: 516px;
+    background-color: var(--multiColor);
+    color: var(--primaryColor);
+}
+#portfolio .btn a{
+    color: var(--primaryColor);
+}
+/* PORTFOLIO END HERE */
+
+/* TESTIMONIAL START HERE  */
+#testimonial{
+    background-color: #f5f5f5 ;
+    height: 445px;
+    width: 100%;
+    padding: 58px 0px;
+}
+#testimonial .heading{
+    text-align: center;
+    padding-bottom: 60px;
+}
+#testimonial .testimonial_cnt{
+    width:570px;
+    background-color: #e9e9e9;
+}
+
+#testimonial .tmonial_1{
+    margin-right: 15px;
+}
+#testimonial .tmonial_2{
+    margin-left: 15px;
+    left: 0;
+}
+#testimonial .testimonial_cnt .test_img{
+    width: 35%;
+}
+#testimonial .test_img img{
+    width: 100%;
+    line-height: 0px;
+    display: block;
+    
+}
+#testimonial .testimonial_cnt .img_cnt{
+    width: 65%;
+    padding: 25px 38px 30px 19px;
+}
+
+#testimonial .img_cnt p{
+    font-size: 14px ;
+    font-weight: 400 ;
+    font-family: var(--secondaryFont);
+    color: var(--primaryColor) ;
+}
+#testimonial .img_cnt h3{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--primaryFont);
+    color: var(--primaryColor);
+    padding-top: 30px;
+}
+#testimonial .img_cnt h4{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: var(--primaryFont);
+    color: var(--primaryColor);
+}
+/* TESTIMONIAL END HERE */
+
+/* BLOG START HERE  */
+#blog{
+    padding: 98px 0px;
+}
+#blog .heading{
+    text-align: center;
+}
+#blog .blog_cnt{
+    margin: 0px 60px;
+}
+#blog .blog_card{
+    margin: 60px 0px;
+    width: 350px;
+    height: 478px;
+    padding: 20px 20px 30px 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    transition: 450ms;
+    
+}
+#blog .blog_card:hover{
+    background-color: var(--primaryColor);
+    transform-origin: left-top;
+}
+#blog .blog_card p{
+    font-size: 14px ;
+    font-family: var(--primaryFont) ;
+    font-weight: 400 ;
+    color: var(--footerColor) ;
+    padding-top: 30px;
+}
+#blog .blog_card:hover p{
+    color: var(--letterColor2);
+}
+#blog .blog_card h3{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px ;
+    font-weight: 500 ;
+    font-family: var(--primaryFont) ;
+    color: var(--letterColor) ;
+}
+#blog .blog_card:hover h3{
+    color:var(--letterColor2)
+}
+#blog .blog_card a{
+    font-size: 16px ;
+    font-weight: 500 ;
+    font-family: var(--primaryFont) ;
+    color: var(--footerColor) ;
+}
+#blog .blog_card:hover a{
+    color: var(--letterColor2);
+}
+#blog .container .btn{
+    background-color: var(--multiColor);
+    color: var(--primaryColor);
+    margin-left: 515px;
+}
+/* BLOG END HERE */
+
+/* FOOTER START HERE  */
+#footer_cnt{
+    height: 400px;
+    /* margin-bottom: 200px; */
+    padding-top: 86px;
+    padding-bottom: 60px;
+    background-color: #f5f5f5;
+    box-shadow: rgba(14, 30, 37, 0.192) 0px 2px 4px 0px, rgba(12, 25, 31, 0.199) 0px 2px 16px 0px;
+}
+#footer_cnt .container{
+    width: 1170px;
+}
+#footer_cnt .container .row{
+    width: 100%;
+}
+
+#footer_cnt .info {
+    margin-right: 30px;
+    width: 23%;
+}
+#footer_cnt .info p {
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--secondaryFont);
+    color: var(--footerColor);
+    padding: 28px 0px;
+}
+#footer_cnt .info .social a{
+    width: 40px;
+    margin-right: 10px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid var(--primaryColor);
+    background-color: none;
+    line-height: 40px;
+    text-align: center;
+    color: var(--primaryColor);
+    transition: 450ms;
+    
+}
+#footer_cnt .info .social:hover a{
+    background-color: var(--primaryColor);
+    color: var(--letterColor2);
+}
+#footer_cnt .contact{
+    width: 25%;
+}
+#footer_cnt .contact h3{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--primaryFont);
+    color: var(--letterColor);
+    padding-bottom: 38px;
+    text-align: left;
+}
+#footer_cnt .contact .icon{
+    color: var(--footerColor);
+    font-size: 24px;
+    padding-left: 0px;
+    padding-right: 12px;
+    padding-top: 8px;
+    align-items: center;
+}
+#footer_cnt .contact .text{
+    line-height: 23px;
+    color: var(--footerColor);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--secondaryFont);
+    padding-bottom: 24px;
+
+}
+#footer_cnt .contact .text address{
+    font-style: normal;
+}
+#footer_cnt .contact .text a{    
+    color: var(--footerColor);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--secondaryFont);
+    padding-bottom: 27px;
+}
+#footer_cnt .link{
+    width: 16%;
+}
+#footer_cnt .link h3{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--primaryFont);
+    color: var(--letterColor);
+    padding-bottom: 30px;
+    text-align: left;
+}
+#footer_cnt .link ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--secondaryFont);
+    color: #444444;
+    padding-bottom: 26px;
+    display: inline-block;
+    transition: 450ms;
+    
+}
+#footer_cnt .link ul li:hover a{
+    padding-left: 30px;
+    color: var(--primaryColor);
+}
+#footer_cnt .filckr{
+    width: 33%;
+}
+#footer_cnt .filckr h3{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--primaryFont);
+    color: var(--letterColor);
+    text-align: left;
+    padding-bottom: 30px;
+}
+#footer_cnt .filckr img{
+    margin-right: 15px;
+    margin-bottom: 15px;
+    display: block;
+}
+/* FOOTTER END HERE */
+
+
+/* COPYRIGHT START HERE */
+#copyright{
+    height: 55px;
+    background-color: #fbfbfb;
+
+}
+#copyright .copy_cnt p{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--secondaryFont);
+    color: var(--footerColor);
+}
+#copyright .copy_cnt p a{
+    color: #fec920;
+}
+/* COPYRIGHT END HERE */
+
+
+
+
+
+
+    
+
+
+
